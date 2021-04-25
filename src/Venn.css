@@ -1,0 +1,59 @@
+.venntooltip {
+  font-size: 14px;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+  padding: 2px;
+  border: 0px;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+[data-venn-sets="Negative"] {
+  fill: red;
+  opacity: 1;
+}
+[data-venn-sets="Negative_Pain"] {
+  fill: #ff5300;
+  opacity: 1;
+}
+[data-venn-sets="Negative_Fatigue"] {
+  fill: #ff8000;
+  opacity: 1;
+}
+[data-venn-sets="Negative_Pain_Fatigue"] {
+  fill: #ff8c00;
+  opacity: 1;
+}
+[data-venn-sets="Positive"] {
+  fill: green;
+  opacity: 1;
+}
+[data-venn-sets="Positive_Pain"] {
+  fill: #809300;
+  opacity: 1;
+}
+[data-venn-sets="Positive_Fatigue"] {
+  fill: #80c000;
+  opacity: 1;
+}
+[data-venn-sets="Positive_Pain_Fatigue"] {
+  fill: #aab700;
+  opacity: 1;
+}
+[data-venn-sets="Pain"] {
+  fill: orange;
+  opacity: 1;
+}
+[data-venn-sets="Pain_Fatigue"] {
+  fill: #ffd200;
+  opacity: 1;
+}
+[data-venn-sets="Fatigue"] {
+  fill: yellow;
+  opacity: 1;
+  text-transform: rotate(50deg);
+}
