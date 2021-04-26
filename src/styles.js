@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   margin: 0px auto;
   margin-top: 0px;
-  max-width: 500px;
-  height: 80px;
+  width: 80%;
+  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,8 +12,9 @@ export const Container = styled.div`
 
 export const MainContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 100px;
+  justify-content: left;
+  justify-content: space-evenly;
+  width: 50%;
   height: 100%;
 `;
 
@@ -32,7 +33,8 @@ export const Chart = css`
     opacity: 0.8;
   }
   @media (max-width: 420px) {
-    width: 34px;
+    width: 5px;
+    margin-left: 0px;
   }
 `;
 

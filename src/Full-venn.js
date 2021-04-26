@@ -8,64 +8,74 @@ var sets = [
     size: 6,
     sets: ["Negative", "Pain", "Fatigue"],
     label: "6", 
+    dates : [1,7,14,17,23,24]
   },
   {
     size: 0,
     sets: ["Positive", "Negative"]
   },
   {
-    size: 1,
+    size: 7,
     sets: ["Negative", "Pain"],
-    label: "1"
+    label: "7",
+    dates : [1,7,14,16,17,23,24]
   },
   {
     size: 11,
     sets: ["Negative", "Fatigue"],
-    label: "11"
+    label: "11",
+    dates : [1,2,3,7,8,14,15,17,19,23,24]
   },
   {
     size: 1,
     sets: ["Positive", "Pain", "Fatigue"],
-    label: "1"
-  },
-  {
-    size: 2,
-    sets: ["Positive", "Pain"],
-    label: "2"
+    label: "1",
+    dates : [22]
   },
   {
     size: 3,
+    sets: ["Positive", "Pain"],
+    label: "3",
+    dates : [4,12,22]
+  },
+  {
+    size: 4,
     sets: ["Positive", "Fatigue"],
-    label: "3"
+    label: "4",
+    dates : [5,11,20,22]
   },
   {
     size: 7,
     sets: ["Pain", "Fatigue"],
-    label: "7"
+    label: "7",
+    dates : [1, 7,14,17,22,23,24]
   },
   {
     size: 11,
     sets: ["Positive"],
     label: "11",
-    dates : ["15", "17", "19"]
+    dates : [4,5,6,10,11,12,13,20,21,22,25]
     //label: "Positive"
   },
   {
     size: 14,
     sets: ["Negative"],
-    label: "14"
+    label: "14",
+    dates : [1,2,3,7,8,9,14,15,16,17,18,19,23,24]
     //label: "Negative"
   },
   {
     size: 10,
     sets: ["Pain"],
-    label: "10"
+    label: "10",
+    dates : [1,4,7,12,14,16,17,22,23,24]
     //label: "Pain"
   },
   {
     size: 15,
     sets: ["Fatigue"],
     label: "15",
+    dates : [1,2,3,5,7,8,11,14,15,17,19,20,22,23,24]
     //label: "Fatigue"
   }
 ];
@@ -75,13 +85,13 @@ class FullVenn extends React.Component {
     super(props);
     this.chartView = React.createRef();
   }
-  
-  chart = venn.VennDiagram().width(400).height(450).styled(false);
+
+  chart = venn.VennDiagram().width(300).height(300).styled(false);
   
   componentDidMount() {
-
+    var callbackFromParent = this.props.callbackFromParent;
     let div = d3.select(this.chartView);
-    div.datum(sets).call(this.chart);
+    div.datum(this.props.Data).call(this.chart);
     //div.selectAll(".venn-circle path");
     div.selectAll("path")
     .style("fill-opacity", 0.3)
@@ -110,6 +120,9 @@ class FullVenn extends React.Component {
         //detect all the areas in the venn diagram
         venn.sortAreas(div, i);
 
+        //passing dates to parent (callback getDates)
+        callbackFromParent(i.dates);
+
         d3.select(this).attr("opacity", 1);
         tooltip
           .transition()
@@ -131,14 +144,17 @@ class FullVenn extends React.Component {
       })
 
       .on("mousemove", function(d) {
-        tooltip.style("left", (d.pageX + 20) + "px")
-               .style("top", (d.pageY + 40) + "px");
+        tooltip.style("left", (d.pageX - 50) + "px")
+               .style("top", (d.pageY - 30) + "px");
     })
 
       .on("mouseout", function (d, i) {
         d3.select(this).attr("opacity", 0.5);
         tooltip.style("visibility", "hidden");
         //tooltip.text(``);
+
+        //making dates [ ] on mouse out 
+        callbackFromParent([ ]);
 
         // unhighlight
         var selection = d3.select(this).transition("tooltip").duration(400);
@@ -155,8 +171,7 @@ class FullVenn extends React.Component {
   render() {
     return (
       <div className="venn-div">
-        <h1>Monthly Overview</h1>
-        <div className="" ref={(el) => (this.chartView = el)}></div>
+        <div className="venn" ref={(el) => (this.chartView = el)}></div>
       </div>
     );
   }

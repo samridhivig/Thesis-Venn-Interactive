@@ -12,20 +12,24 @@
   opacity: 0;
 }
 
+.venn {
+  width: 100%;
+}
+
 [data-venn-sets="Negative"] {
   fill: red;
   opacity: 1;
 }
 [data-venn-sets="Negative_Pain"] {
-  fill: #ff5300;
+  fill: #c00040;
   opacity: 1;
 }
 [data-venn-sets="Negative_Fatigue"] {
-  fill: #ff8000;
+  fill: #ea5b05;
   opacity: 1;
 }
 [data-venn-sets="Negative_Pain_Fatigue"] {
-  fill: #ff8c00;
+  fill: #c73d2e;
   opacity: 1;
 }
 [data-venn-sets="Positive"] {
@@ -33,27 +37,27 @@
   opacity: 1;
 }
 [data-venn-sets="Positive_Pain"] {
-  fill: #809300;
+  fill: #404040;
   opacity: 1;
 }
 [data-venn-sets="Positive_Fatigue"] {
-  fill: #80c000;
+  fill: #6b9b05;
   opacity: 1;
 }
 [data-venn-sets="Positive_Pain_Fatigue"] {
-  fill: #aab700;
+  fill: #72672e;
   opacity: 1;
 }
 [data-venn-sets="Pain"] {
-  fill: orange;
+  fill: #800080;
   opacity: 1;
 }
 [data-venn-sets="Pain_Fatigue"] {
-  fill: #ffd200;
+  fill: #ab5b45;
   opacity: 1;
 }
 [data-venn-sets="Fatigue"] {
-  fill: yellow;
+  fill: #d5b60a;
   opacity: 1;
   text-transform: rotate(50deg);
 }

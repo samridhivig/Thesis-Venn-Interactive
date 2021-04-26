@@ -14,28 +14,16 @@ import {
   // 1 , 20 , 40 
 const data = [
     [{
-        distance: 40,
+        distance: 20,
         colors: ["#FF0000", "#FF0000"]
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 40,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#FF0000", "#FF0000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -43,11 +31,23 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -55,11 +55,11 @@ const data = [
       },
       {
         distance: 1,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 40,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -67,11 +67,11 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -79,11 +79,47 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -91,11 +127,11 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -103,11 +139,11 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -115,11 +151,11 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -127,11 +163,83 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -139,11 +247,11 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -151,11 +259,11 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -163,11 +271,35 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
+      }],
+      [{
+        distance: 40,
+        colors: ["#FF0000", "#FF0000"]
+      },
+      {
+        distance: 40,
+        colors: ["#d5b60a", "#d5b60a"]
+      },
+      {
+        distance: 1,
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 40,
@@ -175,143 +307,11 @@ const data = [
       },
       {
         distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
-      }],
-      [{
-        distance: 40,
-        colors: ["#008000", "#008000"]
-      },
-      {
-        distance: 40,
-        colors: ["#FFFF00", "#FFFF00"]
-      },
-      {
-        distance: 1,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 0,
@@ -319,11 +319,11 @@ const data = [
       },
       {
         distance: 0,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 0,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 0,
@@ -331,11 +331,11 @@ const data = [
       },
       {
         distance: 0,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 0,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 0,
@@ -343,11 +343,11 @@ const data = [
       },
       {
         distance: 0,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 0,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 0,
@@ -355,11 +355,11 @@ const data = [
       },
       {
         distance: 0,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 0,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],
       [{
         distance: 0,
@@ -367,18 +367,22 @@ const data = [
       },
       {
         distance: 0,
-        colors: ["#FFFF00", "#FFFF00"]
+        colors: ["#d5b60a", "#d5b60a"]
       },
       {
         distance: 0,
-        colors: ["#FFA500", "#FFA500"]
+        colors: ["#800080", "#800080"]
       }],    
 ]
 
 // brushing implementation: Add dates in Full-venn sets. When an intersection is clicked, pass the dates as props 
 // to the Calendar component. Now calendar component has to highlight these passed dates. 
 
-function Calendar() {
+function Calendar(props) {
+
+    //const [dates, setDate] = useState([]);
+    //useEffect(() => { setDate(props.Dates )}, [props.Dates]);
+    //useEffect(() => { console.log("this dates in calendar", props.Dates)}, [props.Dates]);
     
     var arr = [];
     for(let day = 1; day <= 30; day ++){
@@ -390,10 +394,10 @@ function Calendar() {
         }
         arr.push({"dayName" : dayName, "date" : day, "data": data[day-1]});
     }
-    console.log(arr);
-    var renderedOutput = arr.map(item => item.date == 12 ? 
+    //console.log("dates in caleendar", dates);
+    var renderedOutput = arr.map(item => props.Dates != undefined && props.Dates.includes(item.date) ? 
         // highlight the cell if item.date == 12
-        <div className="gridItems" style={{backgroundColor: "lightblue"}}> <div className="dayName"> {item.dayName} </div> {item.date} 
+        <div className="gridItems" style={{backgroundColor: "lightgray"}}> <div className="dayName"> {item.dayName} </div> <div className="date"> {item.date} </div>
         <div className="barCharts"> 
         <Container>
       <MainContainer>
@@ -411,7 +415,7 @@ function Calendar() {
     </div>
         :
         // else don't highlight the cell 
-    <div className="gridItems"> <div className="dayName"> {item.dayName} </div> {item.date} 
+    <div className="gridItems"> <div className="dayName"> {item.dayName} </div> <div className="date"> {item.date} </div>
         <div className="barCharts"> 
         <Container>
       <MainContainer>
